@@ -34,7 +34,7 @@ public class SpringConfig {
 	@Bean
 	public SpringTemplateEngine templateEngine() {
 		SpringTemplateEngine templateEngine = new SpringTemplateEngine();
-		templateEngine.setTemplateResolver(templateResolver());
+		templateEngine.setTemplateResolver(templateResolver()); // error is here
 		templateEngine.setEnableSpringELCompiler(true);
 		return templateEngine;
 	} 
